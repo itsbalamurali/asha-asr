@@ -9,9 +9,9 @@ cache:
   - apt
 
 before_install:
-  #- docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker build -t itsbalamurali/asha-asr .
-  #- docker push itsbalamurali/heyasha
+  - docker push itsbalamurali/asha-asr
 
 notifications:
   slack: heyasha:m1OwwwmiydtXPLKeUY1jwGzd
